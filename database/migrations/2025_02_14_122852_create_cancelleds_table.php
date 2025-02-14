@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('cancelleds', function (Blueprint $table) {
             $table->id();
             $table->foreignId('reservation_id')->constrained()->onDelete('cascade');
-            $table->foreignId('employee_id')->constrained();
             $table->string('reason')->nullable(); 
             $table->dateTime('cancelled_at')->nullable();
             $table->timestamps();

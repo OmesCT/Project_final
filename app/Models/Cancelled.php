@@ -14,10 +14,6 @@ class Cancelled extends Model
         return $this->belongsTo(Tables::class, 'table_id');
     }
 
-    public function employee()
-    {
-        return $this->belongsTo(Employees::class, 'employee_id');
-    }
 
     public function customer()
     {

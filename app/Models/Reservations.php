@@ -21,10 +21,6 @@ class Reservations extends Model
         return $this->belongsTo(Customers::class, 'customer_id');
     }
 
-    public function employee()
-    {
-        return $this->belongsTo(Employees::class, 'employee_id');
-    }
 
     public function reservationStatus()
     {
